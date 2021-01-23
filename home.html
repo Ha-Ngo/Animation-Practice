@@ -1,0 +1,241 @@
+<!-- Instructions:
+please add only the HTML layout of the wireframe(No styling. you can only use display: block, inline-block)
+and make sure it's accessible.
+here's the link to the wireframe 
+https://www.figma.com/file/fyN3JrM4xQQJpD7TWwvmTg/frame?node-id=0%3A1
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header class="container">
+      <a
+        role="blog name"
+        href="home.html"
+        class="blog-name"
+        aria-label="Go to Home"
+      >
+        My Blog
+        <i role="blog name icon" class="fas fa-cat" aria-hidden="true"></i>
+      </a>
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="home.html" aria-label="Go to Home">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="blogs.html" aria-label="Go to Post">Post</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" aria-label="Go to About">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" aria-label="Go to Gallery">Gallery</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" aria-label="Go to Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div role="personal information" id="section1" class="container">
+        <div class="personal-information">
+          <h1
+            role="personal information title"
+            class="personal-information__title"
+          >
+            Personal Information
+          </h1>
+          <p role="personal information description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id dolores
+            commodi, veniam optio adipisci fugiat voluptatem consequatur
+            repellendus molestiae facere!
+          </p>
+        </div>
+        <img src="assets/images/header.svg" alt="personal photo" />
+      </div>
+      <div role="project" id="section2">
+        <h2 class="project__title">Project Information</h2>
+        <section class="project container">
+          <article class="project__item">
+            <h3 role="project title" class="project__item__title">Project 1</h3>
+            <p role="project content" class="project__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              incidunt! Sed numquam reiciendis adipisci est. Molestias, modi
+              sapiente. Eos, quisquam?
+            </p>
+            <button aria-label="Click me for more project information">
+              More information
+            </button>
+          </article>
+          <article class="project__item">
+            <h3 role="project title" class="project__item__title">Project 2</h3>
+            <p role="project content" class="project__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              incidunt! Sed numquam reiciendis adipisci est. Molestias, modi
+              sapiente. Eos, quisquam?
+            </p>
+            <button aria-label="Click me for more project information">
+              More information
+            </button>
+          </article>
+          <article class="project__item">
+            <h3 role="project title" class="project__item__title">Project 3</h3>
+            <p role="project content" class="project__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              incidunt! Sed numquam reiciendis adipisci est. Molestias, modi
+              sapiente. Eos, quisquam?
+            </p>
+            <button aria-label="Click me for more project information">
+              More information
+            </button>
+          </article>
+        </section>
+      </div>
+      <div role="techstack" id="section3" class="techstack">
+        <h2 role="techstack title" class="techstack__title">Tech Stack</h2>
+        <hr />
+        <ul role="list icons" class="techstack__icons container">
+          <i class="fab fa-html5 techstack__icons__item" aria-hidden="true"></i>
+          <i class="fab fa-react techstack__icons__item" aria-hidden="true"></i>
+          <i class="fab fa-sass techstack__icons__item" aria-hidden="true"></i>
+          <i class="fab fa-css3 techstack__icons__item" aria-hidden="true"></i>
+          <i
+            class="fab fa-docker techstack__icons__item"
+            aria-hidden="true"
+          ></i>
+          <i class="fab fa-vuejs techstack__icons__item" aria-hidden="true"></i>
+          <i class="fab fa-js techstack__icons__item" aria-hidden="true"></i>
+        </ul>
+        <hr />
+      </div>
+      <div role="blog" id="section4" class="blog">
+        <h2 role="blog title" class="blog__title">Blog Post</h2>
+        <section class="blog__item container">
+          <img src="assets/images/img-1.jpg" alt="Image1 description" />
+          <div role="blog content" class="blog__item__content">
+            <h3 role="blog title" class="blog__item__content__title">
+              Blog Post 1
+            </h3>
+            <p>Time & Date</p>
+            <p role="main blog">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati totam et a suscipit recusandae libero doloribus, esse at
+              accusantium quidem debitis quas laboriosam. Sed, praesentium?
+            </p>
+            <button
+              onclick="window.location.href='singleblog.html';"
+              aria-label="Click me for more information"
+            >
+              Read Blog 1
+            </button>
+          </div>
+        </section>
+        <section class="blog__item container">
+          <img src="assets/images/img-2.jpg" alt="Image2 description" />
+          <div role="blog content" class="blog__item__content">
+            <h3 role="blog title" class="blog__item__content__title">
+              Blog Post 2
+            </h3>
+            <p>Time & Date</p>
+            <p role="main blog">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati totam et a suscipit recusandae libero doloribus, esse at
+              accusantium quidem debitis quas laboriosam. Sed, praesentium?
+            </p>
+            <button
+              onclick="window.location.href='singleblog.html';"
+              aria-label="Click me for more information"
+            >
+              Read Blog 2
+            </button>
+          </div>
+        </section>
+        <section class="blog__item container">
+          <img src="assets/images/img-3.jpg" alt="Image3 description" />
+          <div role="blog content" class="blog__item__content">
+            <h3 role="blog title" class="blog__item__content__title">
+              Blog Post 3
+            </h3>
+            <p>Time & Date</p>
+            <p role="main blog">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati totam et a suscipit recusandae libero doloribus, esse at
+              accusantium quidem debitis quas laboriosam. Sed, praesentium?
+            </p>
+            <button
+              onclick="window.location.href='singleblog.html';"
+              aria-label="Click me for more information"
+            >
+              Read Blog 3
+            </button>
+          </div>
+        </section>
+      </div>
+      <div role="information form" id="section5">
+        <h2 role="information form title">Submit Contact Information</h2>
+        <form>
+          <div role="lastname input">
+            <label for="lastname">Fill in your lastname:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder=" Your last name"
+            />
+          </div>
+          <br />
+          <div role="firstname input">
+            <label for="firstname">Fill in your firstname:</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder=" Your first name"
+            />
+          </div>
+          <br />
+          <div role="other information input">
+            <label for="otherinformation">Other information:</label>
+            <textarea
+              id="otherinformation"
+              name="otherinformation"
+              rows="6"
+              cols="30"
+            ></textarea>
+          </div>
+          <button aria-label="Click me to submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer class="container">
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="icon-container">
+        <i
+          class="fab fa-facebook-f icon-container__item"
+          aria-hidden="true"
+        ></i>
+        <i class="fab fa-linkedin icon-container__item" aria-hidden="true"></i>
+        <i class="fab fa-github icon-container__item" aria-hidden="true"></i>
+      </div>
+    </footer>
+
+    <!-- these Icons can be used for the tech stack banner -->
+    <!-- <i class="fab fa-js"></i>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-react"></i>
+    <i class="fab fa-sass"></i>
+    <i class="fab fa-css3"></i> -->
+    <script
+      src="https://kit.fontawesome.com/cc4be81cad.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
