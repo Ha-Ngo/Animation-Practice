@@ -87,16 +87,118 @@ footer .icon-container__item {
   border-radius: 50%;
 }
 
+#Right-hand,
+#Left-hand {
+  animation: hand 0.5s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#Foot {
+  animation: foot 0.7s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#Frame1 {
+  animation: frame1 2s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#Frame2 {
+  animation: frame2 2s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#Frame3 {
+  animation: frame3 2s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#Title,
+#Content {
+  animation: text 1s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.arrow-icon {
+  animation: arrow 0.5s infinite;
+}
+
+@keyframes hand {
+  from {
+    transform: rotateX(40deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes foot {
+  from {
+    transform: skewY(-20deg);
+  }
+  to {
+    transform: skeyY(0deg);
+  }
+}
+
+@keyframes frame1 {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes frame2 {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes frame3 {
+  from {
+    transform: rotateZ(180deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes text {
+  from {
+    transform: scale(0, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .heading {
   width: 30%;
   margin: 60px auto 0 auto;
   text-align: center;
 }
 
-.main-blog img {
+.main-blog svg {
   display: block;
-  width: 500px;
-  height: 300px;
   margin: 50px auto;
 }
 
@@ -115,7 +217,8 @@ footer .icon-container__item {
 }
 
 .blog-post {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .blog-post__article {
@@ -136,6 +239,11 @@ footer .icon-container__item {
   margin-bottom: 10px;
 }
 
+.arrow-icon {
+  margin: 80px 15px;
+  text-align: center;
+}
+
 #section1 {
   margin: 80px 15px;
 }
@@ -149,7 +257,7 @@ footer .icon-container__item {
   margin-bottom: 15px;
 }
 
-#section1 img {
+#section1 svg {
   width: 50%;
   height: auto;
 }

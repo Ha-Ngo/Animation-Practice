@@ -1,0 +1,104 @@
+#Right-hand,
+#Left-hand {
+    animation: hand 0.5s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+ 
+#Foot {
+    animation: foot 0.7s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#Frame1 {
+    animation: frame1 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#Frame2 {
+    animation: frame2 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#Frame3 {
+    animation: frame3 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#Title,
+#Content {
+    animation: text 1s ease-in-out infinite;
+    transform-origin: center;
+
+}
+
+.arrow-icon {
+    animation: arrow 0.5s infinite;
+}
+  
+@keyframes hand {
+    from {
+        transform: rotateX(40deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes foot {
+    from {
+      transform: skewY(-20deg);
+    }
+    to {
+      transform: skeyY(0deg);
+    }
+}
+
+@keyframes frame1 {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes frame2 {
+    from {
+        transform: rotateY(90deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes frame3 {
+    from {
+        transform: rotateZ(180deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes text {
+    from {
+        transform: scale(0, 1);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
